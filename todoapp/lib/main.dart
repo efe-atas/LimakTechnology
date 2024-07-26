@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todoapp/add_note.dart';
 import 'package:todoapp/notes.dart';
 import 'package:todoapp/note.dart';
 
 List<Note> allNotes = [];
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: const Color.fromARGB(255, 101, 119, 134),
       ),
-      body: const Notes(),
+      body:  const Notes(),
       bottomNavigationBar: BottomAppBar(
         color: Colors.transparent,
         child: Row(

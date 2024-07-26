@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todoapp/main.dart';
 import 'package:todoapp/note.dart';
+import 'package:todoapp/providers/note_provider.dart';
 
 class AddNote extends StatefulWidget {
   const AddNote({
@@ -30,6 +32,7 @@ class _AddNoteState extends State<AddNote> {
 
   @override
   Widget build(BuildContext context) {
+    final active = Provider((ref) => ref.watch(noteProvider));
     int counter = 0;
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 20, 23, 26),
@@ -73,11 +76,14 @@ class _AddNoteState extends State<AddNote> {
                   // TextField'dan metni al ve not listesine ekle
                   String noteText = _textController.text;
                   if (noteText.isNotEmpty) {
-                    allNotes.add(Note(
+                    final Note newNote = Note(
                       note: noteText,
                       noteId: counter,
-                     
-                    ));
+                    );
+                     context.read(noteProvider.notifier).addNote(newNote);
+                    _textController.clear();
+                    
+
                     counter++;
                     _textController.clear();
 

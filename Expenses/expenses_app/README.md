@@ -1,67 +1,49 @@
-# Flutter Expenses App
+# Expenses App
 
-This Flutter Expenses App project is designed to help users manage their expenses efficiently. It provides features for tracking expenses, categorizing them, and generating reports.
+This project is an expenses management application that helps users track their spending. It allows users to add and delete expense entries, as well as view a summary of their expenses.
 
 ## Features
 
-- **Expense Tracking**: Record your expenses with details such as amount, date, and category.
-- **Categories**: Organize expenses into different categories (e.g., food, utilities, entertainment).
-- **Reports**: Generate reports to visualize spending patterns over time.
-- **User Authentication**: Secure login and authentication system for user privacy.
-- **Responsive Design**: User-friendly interface that adapts to different devices.
+- Add new expense entries
+- Delete entries
+- View a summary of expenses
 
-## Technologies Used
+## Screenshots
 
-- **Flutter**: Dart programming language and Flutter framework
-- **Firebase**: Backend as a service for authentication and data storage
+Below are some screenshots of the application:
 
-## Getting Started
+### Dashboard
 
-### Prerequisites
+<img src="expense_ss/1.png" alt="App Screenshot" width="300"/>
+<img src="expense_ss/2.png" alt="App Screenshot" width="300"/>
+<img src="expense_ss/3.png" alt="App Screenshot" width="300"/>
 
-- Flutter SDK installed
-- Android Studio / Xcode for Android / iOS development
 
-### Installation
+## Installation
+
+To install and run the project locally, follow these steps:
 
 1. Clone the repository:
-
-git clone https://github.com/efe-atas/flutter-expenses-app.git
-
-
+    ```bash
+    git clone https://github.com/efe-atas/LimakTechnology.git
+    ```
 2. Navigate to the project directory:
-
-cd flutter-expenses-app
-
-
+    ```bash
+    cd LimakTechnology/Expenses/expenses_app
+    ```
 3. Install dependencies:
-
-flutter pub get
-
-
-4. Connect your device or emulator.
-
-5. Run the app:
-
-flutter run
-
-6. The app will launch on your device/emulator.
+    ```bash
+    npm install
+    ```
+4. Run the application:
+    ```bash
+    npm start
+    ```
 
 ## Usage
 
-- **User Registration**: Create a new account or login with existing credentials.
-- **Adding Expenses**: Add new expenses by filling out the form with required details.
-- **Viewing Reports**: Navigate to the reports section to visualize your spending habits.
-- **Managing Categories**: Edit or delete expense categories as needed.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
+Once the application is running, you can start managing your expenses. Use the "Add Expense" button to add a new entry, and click on any existing entry to edit or delete it. The dashboard provides a summary of your total expenses.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Inspired by the need to track personal expenses efficiently.
+This project is licensed under the MIT License.

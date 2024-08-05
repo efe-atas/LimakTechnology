@@ -10,6 +10,7 @@ Checking for npm/bin/npm-cli install at /Users/iefeatas/.cache/firebase/tools/li
 Checking for npm/bin/npm-cli install at /Users/iefeatas/.cache/firebase/tools/node_modules/npm/bin/npm-cli
 Checking for npm/bin/npm-cli install at /snapshot/firepit/node_modules/npm/bin/npm-cli
 Found npm/bin/npm-cli install.
+ShellJSInternalError: ENOENT: no such file or directory, unlink '/Users/iefeatas/.cache/firebase/runtime/node.bat'
 Runtime binaries created.
 /usr/local/bin/firebase
 /usr/local/bin/firebase,/snapshot/firepit/firepit.js,apps:sdkconfig,android,1:507693888326:android:1f84a187129684dcaaab47,--json
@@ -21,4 +22,4 @@ Checking for npm/bin/npm-cli install at /Users/iefeatas/.cache/firebase/tools/li
 Checking for npm/bin/npm-cli install at /Users/iefeatas/.cache/firebase/tools/node_modules/npm/bin/npm-cli
 Checking for npm/bin/npm-cli install at /snapshot/firepit/node_modules/npm/bin/npm-cli
 Found npm/bin/npm-cli install.
-ShellJSInternalError: ENOENT: no such file or directory, stat '/Users/iefeatas/.cache/firebase/runtime/shell.js'
+ShellJSInternalError: ENOENT: no such file or directory, chmod '/Users/iefeatas/.cache/firebase/runtime/shell.js'
